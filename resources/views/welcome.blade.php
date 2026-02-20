@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modul Pertemuan 1</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black flex items-center justify-center min-h-screen">
+<body class="bg-[#0a0a0a] text-white flex items-center justify-center min-h-screen font-sans">
 
-    <div class="bg-zinc-900 text-white p-10 rounded-xl shadow-lg w-[600px]">
-        <h1 class="text-xl font-semibold mb-2">Zahwa Anritia</h1>
-        <p class="text-gray-400 mb-6">20230140116</p>
+    <div class="w-full max-w-3xl bg-[#161615] border border-[#3E3E3A] rounded-lg p-12 shadow-xl">
 
-        <button class="bg-gray-200 text-black px-4 py-2 rounded-md">
+        <h1 class="text-2xl font-semibold text-[#EDEDEC] mb-2">
+            Zahwa Anritia
+        </h1>
+
+        <p class="text-lg text-[#A1A09A] mb-8">
+            20230140116
+        </p>
+
+        <a href="#" 
+           class="inline-block bg-[#FDFDFC] text-[#1b1b18] font-medium rounded-md py-2.5 px-6 transition duration-200 hover:bg-gray-200">
             Modul Pertemuan 1
-        </button>
+        </a>
+
     </div>
 
 </body>
